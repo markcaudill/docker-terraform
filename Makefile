@@ -31,4 +31,4 @@ build : Dockerfile
 
 push : build
 	@echo "+ $@"
-	$(DOCKER) push -t $(REPO)/$(IMAGE):$(TAG)
+	$(DOCKER) push $(REPO)/$(IMAGE):$(TAG)
